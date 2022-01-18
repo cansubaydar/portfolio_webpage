@@ -6,6 +6,7 @@
     --main-pink: rgb(128, 0, 64);
     --main-silver: rgb(214, 214, 214);
 }
+
 *, 
 *::before, 
 *::after{
@@ -68,10 +69,6 @@ img {
     transition: transform 0.5s ease;
 }
 
-@media all and (max-width: 62rem) { 
-    .nav-list { margin-right: 1.5rem; }
-}
-
 .shape { 
     line-height: 0; 
     direction: ltr;
@@ -88,12 +85,6 @@ img {
     left: 50%;
     transform: translateX(-50%);
     fill: var(--main-pink);
-}
-
-@media all and (max-width: 62rem) { 
-    .shape-top { 
-        margin-top: 2.85rem; 
-    }
 }
 
 .welcome-section { 
@@ -147,12 +138,6 @@ img {
     padding: 0 1rem;
 }
 
-@media all and (max-width: 62rem) { 
-    .section-header { 
-        font-size: 2.8rem;
-    }
-}
-
 .line { 
     width: 50%;
     margin: 0 auto 3rem auto;
@@ -167,12 +152,6 @@ img {
     grid-gap: 3rem;
     justify-content: center;
     margin-bottom: 5rem;
-    
-}
-@media all and (max-width: 62rem) { 
-    .p-grid {
-        width: 70%;
-    }
 }
 
 .project { 
@@ -254,20 +233,7 @@ ion-icon {
     padding-right: 0.5rem;
     font-size: 2.25rem;
     vertical-align: text-bottom;
-}
-
-@media all and (max-width: 62rem) { 
-    .contact-section {
-        padding: 10% 5% 25% 5%;
-    }
-    .contact-icons {
-        flex-wrap: wrap;
-    }
-    .contact-icons a {
-        font-size: 1.3rem;
-        padding: 0.5rem;
-    }
-}
+} 
 
 .shape-bottom3 svg{ 
     height: 6.25rem; 
@@ -298,7 +264,29 @@ footer p {
     font-size: 1.3rem;
 }
 
-@media all and (max-width: 62rem) { 
+@media screen and (max-width: 62rem) { 
+    .nav-list { 
+        margin-right: 1.5rem; 
+    }
+    .shape-top { 
+        margin-top: 2.85rem; 
+    }
+    .section-header { 
+        font-size: 2.8rem;
+    }
+    .p-grid {
+        width: 70%;
+    }
+    .contact-section {
+        padding: 10% 5% 25% 5%;
+    }
+    .contact-icons {
+        flex-wrap: wrap;
+    }
+    .contact-icons a {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
     footer p {
         font-size: 1.1rem;
     }
